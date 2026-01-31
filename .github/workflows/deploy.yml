@@ -29,9 +29,9 @@ jobs:
 
     # Шаг 3: Проверка HTML (опционально)
     - name: HTML Validation
-      uses: Cyb3r-Jak3/html5validator-action@v7
+      uses: anishathalye/proof-html@v2
       with:
-        root: .
+        directory: ./
 
     # Шаг 4: Деплой на GitHub Pages
     - name: Deploy to GitHub Pages
