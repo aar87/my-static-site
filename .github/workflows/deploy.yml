@@ -14,6 +14,8 @@ jobs:
     # Шаг 1: Checkout кода
     - name: Checkout code
       uses: actions/checkout@v4
+      with:
+        token: ${{ secrets.GITHUB_TOKEN }}
 
     # Шаг 2: Setup Node.js (может пригодиться для более сложных сборок)
     - name: Setup Node.js
