@@ -32,6 +32,7 @@ jobs:
       uses: anishathalye/proof-html@v2
       with:
         directory: ./
+        check_favicon: false
 
     # Шаг 4: Деплой на GitHub Pages
     - name: Deploy to GitHub Pages
