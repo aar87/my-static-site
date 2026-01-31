@@ -47,4 +47,4 @@ jobs:
       if: success()
       run: |
         echo "Сайт успешно развернут на GitHub Pages!"
-        echo "URL: https://${{ github.repository_owner }}.github.io/my-static-site
+        echo "URL: https://${{ github.repository_owner }}.github.io/my-static-site"
