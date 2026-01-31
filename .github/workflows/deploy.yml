@@ -29,10 +29,9 @@ jobs:
 
     # Шаг 3: Проверка HTML (опционально)
     - name: HTML Validation
-      uses: cyrilletuzi/validate-html@v4
+      uses: Cyb3r-Jak3/html5validator-action@v7
       with:
-        pattern: "**/*.html"
-        level: warning
+        root: .
 
     # Шаг 4: Деплой на GitHub Pages
     - name: Deploy to GitHub Pages
