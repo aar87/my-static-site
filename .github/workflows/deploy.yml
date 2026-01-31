@@ -28,11 +28,11 @@ jobs:
         cache: 'npm'
 
     # Шаг 3: Проверка HTML (опционально)
-#    - name: HTML5 Validator
-#      uses: Cyb3r-Jak3/html5validator-action@v7
-#      with:
-#        root: .
-#        log_level: INFO
+    - name: HTML Validation
+      uses: cyrilletuzi/validate-html@v4
+      with:
+        pattern: "**/*.html"
+        level: warning
 
     # Шаг 4: Деплой на GitHub Pages
     - name: Deploy to GitHub Pages
