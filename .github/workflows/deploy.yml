@@ -27,6 +27,7 @@ jobs:
       uses: Cyb3r-Jak3/html5validator-action@v7
       with:
         root: .
+        log_level: INFO
 
     # Шаг 4: Деплой на GitHub Pages
     - name: Deploy to GitHub Pages
